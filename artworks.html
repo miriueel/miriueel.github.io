@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Portfolio2025 | Uirim Lee</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+    
+    
+
+  
+
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar"></div> 
+
+
+
+
+
+<main class="artworks">
+<br><br>Some selected works I worked personally/professionally.
+<br>Programs used: Photoshop, Blender
+ 
+<div class="mansory-gallery">
+    <div class="column">
+      <img src="images/env3d-1.png">
+      <img src="images/env3d-2.png">
+      <img src="images/env3d-3.png">
+      
+
+    </div>
+    <div class="column">
+        <img src="images/conceptthumbnail-1.png">
+        <img src="images/conceptthumbnail-2.png">
+        
+ 
+    </div>
+    <div class="column">
+        <img src="images/conceptthumbnail-3.png">
+        <img src="images/conceptthumbnail-4.png">
+
+    </div>
+
+  </div>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      function tryInject() {
+        const frame = window.parent.document.getElementById('frame');
+        if (frame) {
+          frame.innerHTML = '<img src="/images/miscmain.png" width="100%">';
+        } else {
+          // 부모 DOM이 아직 준비 안 된 경우 → 100ms 뒤에 다시 시도
+          setTimeout(tryInject, 100);
+        }
+      }
+  
+      tryInject();
+    });
+  </script> -->
+
+</main>
+    </div>
+
+
+    <script>
+        fetch('sidebar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('sidebar').innerHTML = data;
+          })
+          .catch(error => console.error('Sidebar load error:', error));
+    </script>
+
+
+
+</body>
+</html>

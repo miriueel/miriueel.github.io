@@ -1,0 +1,368 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Didact Gothic, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+
+.container {
+    font-family: Didact Gothic, sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ffffff;
+    position: sticky;
+    top: 30px;
+}
+
+.sidebar h1 {
+    font-family: Didact Gothic, sans-serif;
+color: #333;
+ text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+  
+}
+
+.sidebar h1 a {
+  font-family: Didact Gothic, sans-serif;
+color: #333;
+text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight:normal
+}
+
+.sidebar h1 a:hover {
+  color: #ff7b00;
+}
+
+.sidebar p {
+    font-family: Didact Gothic, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+font-size: 13px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.sidebar ul li a:hover {
+    color: #ff7b00;
+}
+
+.content {
+    color: #333;
+    flex: 1;
+padding: 0 50px 0 50px;
+}
+
+.home{
+  color: #333;
+  font-family: "Didact Gothic", sans-serif;
+padding: 0 50px 0 50px;
+
+}
+
+.hide {
+ display: none; 
+
+  position: fixed;
+margin: -20px 0px 20px 20px;
+
+}
+
+
+.about {
+  color: #333;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+padding: 0 50px 0 50px;
+}
+
+.artworks {
+  color: #333;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+    font-size: 14px;
+
+padding: 0 50px 0 50px;
+}
+
+.content h2 {
+font-family: Georgia, serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+padding: 0 50px 0 50px;
+  line-height: 1;
+
+}
+
+.content h5 {
+font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+    font-size: 14px;
+  line-height: 1.5;
+padding: 0 50px 0 50px;
+}
+
+.content h3 {
+font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+    font-size: 16px;
+    padding: 0px
+}
+
+
+.content p {
+font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+    font-size: 16px;
+padding: 0 50px 0 50px;
+}
+
+
+
+.zig-zag-line {
+  --a: 90deg; /* control the angle */
+  --s: 22px; /* size of the zig-zag */
+  --b: 1px;  /* control the thickness */
+  
+  background: #111;
+  height: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
+  width: 100%;
+  --_g:var(--s) repeat-x conic-gradient(from calc(var(--a)/-2) at bottom,
+    #fff,#fff 1deg calc(var(--a) - 1deg),#0000 var(--a));
+  mask: 50% calc(-1*var(--b))/var(--_g) exclude,50%/var(--_g);
+}
+
+@font-face {
+  font-family : "Didact Gothic";
+  src : url(/css/DidactGothic-Regular.ttf)
+}
+
+.description {
+  color: #5b5b5b;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 14px;
+  margin: 0 50px 0 50px;
+}
+
+.ttag {
+
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding: 0px 2px 0px 2px;
+
+font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+    font-size: 14px;
+display:inline
+}
+
+
+
+
+.solid {
+  border-style: solid 0px;
+  border-color: rgb(0, 0, 0);
+  width: 200px;
+  height: 200px;
+  margin: 1% 20% 10% 1%;
+  position: relative;
+  overflow: hidden; /* 캔버스가 밖으로 튀어나오지 않게 */
+}
+
+.leftborder {
+    border-left: 4px solid #333;
+   padding: 0 00px 0 10px;
+     margin: 0 50px 0 50px;
+}
+
+
+
+.mansory-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  position: relative;
+}
+
+.mansory-gallery .column {
+  flex: 30%;
+}
+
+.mansory-gallery .column img {
+  border: 0.5rem solid #fff;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mansory-gallery .column {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .mansory-gallery .column {
+    flex: 100%;
+  }
+}
+
+.imageflex {    float: left;
+}
+
+
+.aboutp{
+
+  font-family: Didact Gothic, sans-serif;
+  color: #333;
+  text-decoration: none;
+    font-size: 14px;
+    float: left;
+    font-weight:normal;
+    margin: 14px 50px 0 20px;
+    width: 60%;
+}
+
+
+
+
+@layer setup;
+
+
+@layer setup {
+	:root {
+		--grid-gap: 0;
+		--primary-color: #333745;
+	}
+
+	* {
+		box-sizing: border-box;
+    
+	}
+
+	
+
+	.comic {
+    display: grid;
+		grid-template-columns: repeat(14, 1fr);
+		grid-auto-rows: minmax(0, 1fr);
+		gap: var(--grid-gap);
+
+  width: 200px;
+  height: 330px;
+  margin: 1% 20% 10% 1%;
+  position: relative;
+  overflow: hidden; /* 캔버스가 밖으로 튀어나오지 않게 */
+	}
+
+
+	[class^="panel-"] {
+		background-color:white;
+
+		overflow: hidden;
+
+		img {
+			inline-size: 100%;
+			block-size: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.panel-1 {
+		grid-column: span 14;
+    /* border-style: solid;
+    border-width: 0.5px; */
+    grid-row: span 1;
+	
+	}
+
+	.panel-2 {
+		grid-column: span 9;
+					grid-row: span 2;
+          /* border-style: solid;
+          border-width: 0.5px; */
+	}
+
+	.panel-3 {
+		grid-column: span 5;
+	
+			grid-row: span 4;
+      /* border-style: solid;
+      border-width: 0.5px; */
+	}
+
+	.panel-4 {
+	grid-column: span 9;
+					grid-row: span 2;
+          /* border-style: solid;
+          border-width: 0.5px; */
+		
+	}
+
+	.panel-5 {
+		grid-column: span 4;
+		grid-row: span 2;
+    /* border-style: solid;
+    border-width: 0.5px; */
+	}
+  .panel-6 {
+		grid-column: span 10;
+		grid-row: span 2;
+    /* border-style: solid;
+    border-width: 0.5px; */
+	}
+
+  
+
+}
+.testtest:hover + .hide {
+  display: block;
+  background: white;
+  color: #333;
+  border-radius: 1px;
+ text-align:  top;
+
+  border: 1px solid #333;
+  padding: 0px 5px 0px 5px;
+}
+
+.testtest{
+
+  color: #333;
+}

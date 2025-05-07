@@ -44,7 +44,7 @@ loader.load('cameraNew.gltf', (gltf) => {
   if (importedCamera) {
     camera = importedCamera;
     scene.add(camera);
-    
+ 
     mixer = new THREE.AnimationMixer(camera);
     action = mixer.clipAction(gltf.animations[0]);
     action.paused = true;  // 처음엔 멈춘 상태
@@ -68,6 +68,21 @@ loader.load('cameraNew.gltf', (gltf) => {
 
   }
 });
+
+
+
+window.addEventListener('resize', () => {
+  const width = container.clientWidth;
+  const height = container.clientHeight;
+
+  renderer.setSize(width, height);
+
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+});
+
+
+
 
 function getScrollProgress() {
   const scrollTop = window.scrollY;

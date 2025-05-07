@@ -40,7 +40,7 @@ width: 60%;
 color: #333;
 font-family: "Didact Gothic", sans-serif;
 font-weight: 400;
-padding: 0 5% 0 5% ;
+padding: 5% 5% 0 5% ;
 width: 60%;
 
 }
@@ -61,7 +61,7 @@ width: 60%;
   width: 25%;
   position: sticky;
 
-  top: 30px;
+  top: 10px;
       padding: 1%;
 }
 
@@ -108,8 +108,7 @@ font-size: 13px;
 }
 .frame0{
  
-  height: 10px;
-  width: 10px;
+  width: 45%;
 
   display:inline
 }
@@ -242,16 +241,8 @@ display:inline
 
 
 
-.solid {
-  border-style: solid 0px ;
-  border-color: rgb(0, 0, 0);
-  width: 200px;
-  
-  margin: 1% 20% 10% 1%;
-  position: relative;
 
-  overflow: hidden; /* 캔버스가 밖으로 튀어나오지 않게 */
-}
+
 
 .leftborder {
     border-left: 4px solid #333;
@@ -265,7 +256,7 @@ display:inline
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  width: 60%;
+ 
   position: relative;
 }
 
@@ -296,6 +287,24 @@ display:inline
 .imageflex {    float: left;
 }
 
+
+.solid {
+  border-style: solid ;
+  border-width: 2px;
+
+  width: 9vw;        
+  aspect-ratio: 1 / 1; 
+  border-color:#333;
+ 
+margin: 0% 25% 0% 3%;
+position: relative;
+overflow: hidden; 
+}
+
+.sidebyside
+{ display: flex;           /* 나란히 배치됨 */
+  gap: 0.2rem;               /* 박스 사이 간격 (선택) */
+  align-items:end;   /* 위쪽 정렬 */}
 
 
 
@@ -394,7 +403,7 @@ display:inline
   color: #333;
   border-radius: 1px;
  text-align:  top;
-
+  font-weight: bold;
   border: 1px solid #333;
   padding: 0px 5px 0px 5px;
 }

@@ -69,12 +69,21 @@
     <!-- <script type="module" src="./main.js"></script> -->
 
     <script>
-        fetch('sidebar.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('sidebar').innerHTML = data;
-          })
-          .catch(error => console.error('Sidebar load error:', error));
+     fetch('sidebar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('sidebar').innerHTML = data;
+
+    // fetch 완료 후에 내부 요소 제어 가능
+    const frame = document.getElementById('frame');
+    if (window.location.href.includes('projects.html')) {
+      frame.style.display = 'block';
+    } else {
+      frame.style.border = '0px';
+    }
+  })
+  .catch(error => console.error('Sidebar load error:', error));
+          
     </script>
   
 </body>

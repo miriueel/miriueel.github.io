@@ -78,9 +78,9 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":129,
+			"count":393,
 			"max":[
-				5.375
+				16.375
 			],
 			"min":[
 				0.041666666666666664
@@ -90,36 +90,36 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":129,
+			"count":393,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":129,
+			"count":393,
 			"type":"VEC4"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":516,
+			"byteLength":1572,
 			"byteOffset":0
 		},
 		{
 			"buffer":0,
-			"byteLength":1548,
-			"byteOffset":516
+			"byteLength":4716,
+			"byteOffset":1572
 		},
 		{
 			"buffer":0,
-			"byteLength":2064,
-			"byteOffset":2064
+			"byteLength":6288,
+			"byteOffset":6288
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":4128,
+			"byteLength":12576,
 			"uri":"cameraNew.bin"
 		}
 	]

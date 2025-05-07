@@ -195,7 +195,7 @@ display:inline
 
 
 .solid {
-  border-style: solid 0px;
+  border-style: solid 0px ;
   border-color: rgb(0, 0, 0);
   width: 200px;
   height: 200px;

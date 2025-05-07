@@ -9,7 +9,7 @@ const container = document.getElementById('frame');
 const renderer = new THREE.WebGLRenderer();
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 
-renderer.setSize(container.clientWidth, container.clientHeight);
+
 renderer.setClearColor(0x000000);
 renderer.setPixelRatio(renderer.domElement.setPixelRatio);
 
@@ -283,7 +283,7 @@ spotLight.castShadow = true;
 spotLight.shadow.bias = -0.0001;
 //scene.add(spotLight);
 
-
+renderer.setSize(container.clientWidth, container.clientHeight);
 loader.load('yesTest.gltf', (gltf) => {
  // console.log('loading model');
   const mesh = gltf.scene;

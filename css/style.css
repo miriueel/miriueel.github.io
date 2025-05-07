@@ -52,9 +52,7 @@ text-decoration: none;
   font-weight:normal
 }
 
-.sidebar h1 a:hover {
-  color: #ff7b00;
-}
+
 
 .sidebar p {
     font-family: Didact Gothic, sans-serif;
@@ -67,7 +65,13 @@ text-decoration: none;
     list-style: none;
 font-size: 13px;
 }
+.frame0{
+ 
+  height: 10px;
+  width: 10px;
 
+  display:inline
+}
 .sidebar ul li {
     margin-bottom: 10px;
 }
@@ -276,7 +280,7 @@ display:inline
     
 	}
 
-	
+
 
 	.comic {
     display: grid;

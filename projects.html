@@ -16,9 +16,11 @@
           "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
           "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
         }
+
       }
     </script>
-    
+ 
+
     
 
   
@@ -265,15 +267,21 @@ The player can also clench and unclench their right hand to switch to a dashed l
 </main>
     </div>
 
-    <script type="module" src="./main.js"></script>
 
-    <script>
+
+     <script>
         fetch('sidebar.html')
           .then(response => response.text())
           .then(data => {
             document.getElementById('sidebar').innerHTML = data;
           })
           .catch(error => console.error('Sidebar load error:', error));
-    </script>
+    </script> 
+   
+ 
+
+<script type="module" src="./main.js"></script>
+
+
 </body>
 </html>
